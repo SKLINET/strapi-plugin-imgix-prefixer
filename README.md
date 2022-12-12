@@ -58,7 +58,17 @@ yarn build
 
 ## <a id="configuration"></a>⚙️ Configuration
 
-You can configure the plugin with config file placed in `/config/plugins.js`.
+You can configure the plugin with config file placed in `/config/plugins.js` with the config prop:
+
+```js
+"imgix-prefixer": {
+    enabled: true,
+    config: {
+        imgixBaseURL: "https://beneficio.imgix.net",
+        graphql: true,
+    },
+},
+```
 
 | Property           | Type                               | Example                                     | Description                                      | Required | Default                                                   |
 |--------------------|------------------------------------|---------------------------------------------|--------------------------------------------------|----------|-----------------------------------------------------------|
