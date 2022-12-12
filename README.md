@@ -84,6 +84,7 @@ The default configuration looks like this:
 
 ```js
 {
+    config: {
         imgixBaseURL: null,
         uploadsURL: "/uploads/",
         restApiRegex: "/api/(.*)",
@@ -91,6 +92,7 @@ The default configuration looks like this:
         imgixDefaultParams: {},
         graphql: false,
         imageFormats: ["png", "jpg", "jpeg", "avif", "gif", "webp"],
+    }
 }
 ```
 
