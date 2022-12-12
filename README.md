@@ -60,15 +60,15 @@ yarn build
 
 You can configure the plugin with config file placed in `/config/plugins.js`.
 
-| Property           | Type                               | Example                                     | Required | Default                                                   |
-|--------------------|------------------------------------|---------------------------------------------|----------|-----------------------------------------------------------|
-| imgixBaseURL       | string                             | "https://example.imgix.net"                 | True     | null                                                      |
-| uploadsURL         | string                             | /myUploads/                                 | False    | /uploads/                                                 |
-| restApiRegex       | string (valid regex)               | /api/content-types/(.*)                     | False    | /api/(.*)                                                 |
-| graphqlApiRegex    | string (valid regex)               | /graphqlEndpoint                            | False    | /graphql                                                  |
-| imgixDefaultParams | Record<string, string \| string[]> | { auto: ["compress", "format"], fit: "min"} | False    | {}                                                        |
-| graphql            | boolean                            | true                                        | False    | false                                                     |
-| imageFormats       | string[]                           | ["png", "jpg"]                              |          | [ "png" ,  "jpg" ,  "jpeg" ,  "avif" ,  "gif" ,  "webp" ] |
+| Property           | Type                               | Example                                     | Description                                      | Required | Default                                                   |
+|--------------------|------------------------------------|---------------------------------------------|--------------------------------------------------|----------|-----------------------------------------------------------|
+| imgixBaseURL       | string                             | "https://example.imgix.net"                 |                                                  | True     | null                                                      |
+| uploadsURL         | string                             | /myUploads/                                 |                                                  | False    | /uploads/                                                 |
+| restApiRegex       | string (valid regex)               | /api/content-types/(.*)                     |                                                  | False    | /api/(.*)                                                 |
+| graphqlApiRegex    | string (valid regex)               | /graphqlEndpoint                            |                                                  | False    | /graphql                                                  |
+| imgixDefaultParams | Record<string, string \| string[]> | { auto: ["compress", "format"], fit: "min"} |                                                  | False    | {}                                                        |
+| graphql            | boolean                            | true                                        | Register imgix prefixer also on GraphQL endpoint | False    | false                                                     |
+| imageFormats       | string[]                           | ["png", "jpg"]                              | Image formats you want to proxy                  |          | [ "png" ,  "jpg" ,  "jpeg" ,  "avif" ,  "gif" ,  "webp" ] |
 
 The default configuration looks like this:
 
@@ -81,7 +81,7 @@ The default configuration looks like this:
         imgixDefaultParams: {},
         graphql: false,
         imageFormats: ["png", "jpg", "jpeg", "avif", "gif", "webp"],
-},
+}
 ```
 
 ## <a id="requirements"></a>⚠️ Requirements
