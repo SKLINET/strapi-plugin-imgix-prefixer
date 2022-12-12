@@ -33,8 +33,6 @@ module.exports = ({ strapi }) => {
   const error = (msg) => strapi.log.error(`[imgix-prefixer] ${msg}`);
   info("Initializing GraphQL API...");
 
-  console.log(strapi.config.get(`plugin.imgix-prefixer`));
-
   const { graphqlApiRegex, ...config } = strapi.config.get(
     `plugin.imgix-prefixer`
   );
