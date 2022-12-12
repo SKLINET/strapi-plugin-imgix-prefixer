@@ -1,0 +1,9 @@
+# NodeJS
+node_modules/
+
+# IDEs
+.idea/
+.vscode/
+.history/
+
+.DS_Store

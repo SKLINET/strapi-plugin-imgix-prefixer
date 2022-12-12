@@ -1,0 +1,40 @@
+{
+  "name": "@sklinet/strapi-plugin-imgix-prefixer",
+  "version": "1.0.0",
+  "description": "Replace your assets URL with custom proxied imgix or other provider asset URL",
+  "private": false,
+  "keywords": [
+    "strapi",
+    "imgix",
+    "plugin",
+    "proxy"
+  ],
+  "strapi": {
+    "name": "imgix-prefixer",
+    "description": "Replace your assets URL with custom proxied imgix or other provider asset URL",
+    "kind": "plugin",
+    "displayName": "Imgix Prefixer"
+  },
+  "dependencies": {
+    "safe-flat": "^2.0.2"
+  },
+  "author": {
+    "name": "SKLINET s.r.o.",
+    "url": "https://github.com/SKLINET"
+  },
+  "maintainers": [
+    {
+      "name": "SKLINET s.r.o.",
+      "url": "https://github.com/SKLINET"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SKLINET/strapi-plugin-imgix-prefixer"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
