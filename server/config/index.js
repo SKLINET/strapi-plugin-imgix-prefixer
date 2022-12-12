@@ -2,7 +2,7 @@
 
 module.exports = {
   default: {
-    imgixBaseURL: "https://beneficio.imgix.net",
+    imgixBaseURL: null,
     uploadsURL: "/uploads/",
     restApiRegex: "/api/(.*)",
     graphqlApiRegex: "/graphql",
